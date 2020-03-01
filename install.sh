@@ -8,7 +8,7 @@ CHAT_URL="https://github.com/drsasa/Dreamcatcher-Packet-Tester/releases/download
 GUI_URL="https://github.com/foxbunny/wschat/releases/download/${GUI_VERSION}/wschat-armv7"
 
 mkdir "$TMPD"
-cd /tmp-chat-installer
+cd "$TMPD"
 wget "$CHAT_URL"
 wget "$GUI_URL"
 install -m755 chat /usr/local/bin/chat
