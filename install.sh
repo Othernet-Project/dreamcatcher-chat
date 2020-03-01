@@ -18,7 +18,7 @@ ip_addr=`ifconfig | grep 'inet ' | grep -v '127.0.0.1' | tr -s ' ' | cut -d ' ' 
 echo IP address $ip_addr
 wschat --addr=0.0.0.0:8080 chat" > /usr/local/bin/start-chat
 
-chmod +x /usr/loca/bin/start-chat
+chmod +x /usr/local/bin/start-chat
 
 echo "[Unit]
 Description=Dreamcatcher chat
