@@ -100,8 +100,10 @@ wireless connection.
 Type the following command to download and run the installer:
 
 ```
-curl -k https://raw.githubusercontent.com/Othernet-Project/dreamcatcher-chat/master/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/Othernet-Project/dreamcatcher-chat/master/install.sh | bash
 ```
+
+(That's a letter O after q, not 0 in the above command.)
 
 ## Starting the chat server manually
 
