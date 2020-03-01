@@ -18,6 +18,7 @@ echo "
 
 wschat --addr=0.0.0.0:8080 chat
 " > /usr/local/bin/start-chat
+chmod +x /usr/loca/bin/start-chat
 
 echo "
 
