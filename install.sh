@@ -20,10 +20,24 @@ wschat --addr=0.0.0.0:8080 chat" > /usr/local/bin/start-chat
 
 chmod +x /usr/loca/bin/start-chat
 
+echo "[Unit]
+Description=Dreamcatcher chat
+
+[Service]
+ExecStart=/bin/bash -c '/usr/local/bin/start-chat'
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/chat.service
+
+systemctl daemon-reload
+
 echo "
 
 To start the chat server, type:
 
     start-chat
 
+To start the server on boot:
+
+    systemctl enable chat
 "

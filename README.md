@@ -16,6 +16,7 @@ the connection.
   * [3. Download and run the installer](#3-download-and-run-the-installer)
 * [Starting the chat server manually](#starting-the-chat-server-manually)
 * [Using the chat app](#using-the-chat-app)
+* [Start the chat server automatically](#start-the-chat-server-automatically)
 
 <!-- vim-markdown-toc -->
 
@@ -133,4 +134,16 @@ to the settings screen.
 While the chat up is running normally, you will see the "PCKT" LED blink
 continuously. This LED is located next to the LNB connector on the board, near
 one of the heat sinks.
+
+## Start the chat server automatically
+
+If you wish to start the chat server automatically when Dreamcatcher boots,
+type the following command:
+
+```
+systemctl enable chat
+```
+
+The chat app will start automatically when you turn on the Dreamcatcher next
+time. This has the benefit of not having to log in in order to start it.
 
