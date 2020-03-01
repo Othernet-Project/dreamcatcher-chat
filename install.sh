@@ -32,6 +32,7 @@ WantedBy=multi-user.target" > /etc/systemd/system/chat.service
 
 systemctl daemon-reload
 
+cd -
 rm -rf "$TMPD"
 
 # Make sure files persist
