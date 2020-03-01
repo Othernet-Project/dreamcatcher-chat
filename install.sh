@@ -31,6 +31,10 @@ WantedBy=multi-user.target" > /etc/systemd/system/chat.service
 
 systemctl daemon-reload
 
+# Make sure files persist
+sync
+sync
+
 echo "
 
 To start the chat server, type:
