@@ -8,6 +8,7 @@ the connection.
 
 <!-- vim-markdown-toc GFM -->
 
+* [Note: Work in progress](#note-work-in-progress)
 * [Installation](#installation)
   * [1. Log into the Dreamcatcher device using serial](#1-log-into-the-dreamcatcher-device-using-serial)
     * [Windows](#windows)
@@ -19,6 +20,13 @@ the connection.
 * [Start the chat server automatically](#start-the-chat-server-automatically)
 
 <!-- vim-markdown-toc -->
+
+## Note: Work in progress
+
+This project is a work in progress and may not work correctly (if at all). It
+is made available for those who would like to try it anwyay and/or help with
+the development. Please report any issues in the [issue
+tracker](https://github.com/Othernet-Project/dreamcatcher-chat/issues).
 
 ## Installation
 
@@ -129,6 +137,9 @@ participating in the chat should use the same settings.
 When you click "Connect", you will see the chat window. The line with the ":"
 is where you type in your message. You messages will appear with "<" in front
 of them, while incoming messages will appear with a ">".
+
+**NOTE:** Currently, receiving messages may not work. We are working on fixing
+this issue.
 
 You can click "Disconnect" in the top-left corner to close the chat and go back
 to the settings screen.
