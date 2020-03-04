@@ -16,8 +16,9 @@ the connection.
   * [2. Log in and connect to Internet](#2-log-in-and-connect-to-internet)
   * [3. Download and run the installer](#3-download-and-run-the-installer)
 * [Starting the chat server manually](#starting-the-chat-server-manually)
-* [Using the chat app](#using-the-chat-app)
 * [Start the chat server automatically](#start-the-chat-server-automatically)
+* [Using the chat app](#using-the-chat-app)
+* [Updating the chat app](#updating-the-chat-app)
 
 <!-- vim-markdown-toc -->
 
@@ -128,26 +129,6 @@ Web browser by typing in that address followed by ":8080". For instance, if
 your IP address is 192.168.0.4, then you would type this in the address bar:
 192.168.0.4:8080.
 
-## Using the chat app
-
-When you open the chat app for the first time, you will see a form with some
-settings. These are the radio settings. All Dreamcatcher devices that are
-participating in the chat should use the same settings.
-
-When you click "Connect", you will see the chat window. The line with the ":"
-is where you type in your message. You messages will appear with "<" in front
-of them, while incoming messages will appear with a ">".
-
-**NOTE:** Currently, receiving messages may not work. We are working on fixing
-this issue.
-
-You can click "Disconnect" in the top-left corner to close the chat and go back
-to the settings screen.
-
-While the chat up is running normally, you will see the "PCKT" LED blink
-continuously. This LED is located next to the LNB connector on the board, near
-one of the heat sinks.
-
 ## Start the chat server automatically
 
 If you wish to start the chat server automatically when Dreamcatcher boots,
@@ -159,4 +140,35 @@ systemctl enable chat
 
 The chat app will start automatically when you turn on the Dreamcatcher next
 time. This has the benefit of not having to log in in order to start it.
+
+## Using the chat app
+
+When you open the chat app for the first time, you will see a form with some
+settings. These are the radio settings. All Dreamcatcher devices that are
+participating in the chat should use the same settings.
+
+The "Callsign" setting is your callsign or a nickname that will appear to other
+users of the chat app. This setting is saved in your browser and recalled every
+time you start the chat app.
+
+When you click "Connect", you will see the chat window. The text box at the
+bottom is used to type messages. Send by pressing Enter or the "Send" button in
+the bottom right corner.
+
+You can click "Disconnect" in the top-left corner to close the chat and go back
+to the settings screen.
+
+While the chat up is running normally, you will see the "PCKT" LED blink
+continuously. This LED is located next to the LNB connector on the board, near
+one of the heat sinks.
+
+## Updating the chat app
+
+To update the chat app, run the installer like the first time. It will
+overwrite the chat app. If you've set it to start on boot, you will need to
+reboot the system or restart the chat server:
+
+```
+systemctl restart chat
+```
 
