@@ -109,7 +109,7 @@ wireless connection.
 Type the following command to download and run the installer:
 
 ```
-wget -qO- https://raw.githubusercontent.com/Othernet-Project/dreamcatcher-chat/master/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/Othernet-Project/dreamcatcher-chat/master/install.sh | sudo bash
 ```
 
 (That's a letter O after q, not 0 in the above command.)
@@ -119,7 +119,7 @@ wget -qO- https://raw.githubusercontent.com/Othernet-Project/dreamcatcher-chat/m
 You can start the chat server manually by typing:
 
 ```
-start-chat
+sudo start-chat
 ```
 
 You will see a message that says "IP address NNN.NNN.NNN.NNN". This is the IP
@@ -135,7 +135,7 @@ If you wish to start the chat server automatically when Dreamcatcher boots,
 type the following command:
 
 ```
-systemctl enable chat
+sudo systemctl enable chat
 ```
 
 The chat app will start automatically when you turn on the Dreamcatcher next
@@ -169,6 +169,6 @@ overwrite the chat app. If you've set it to start on boot, you will need to
 reboot the system or restart the chat server:
 
 ```
-systemctl restart chat
+sudo systemctl restart chat
 ```
 
