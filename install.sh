@@ -1,7 +1,7 @@
 #!/bin/env bash
 
 CHAT_VERSION=0.0.2
-GUI_VERSION=0.0.4
+GUI_VERSION=0.0.5
 TMPD=/tmp/chat-installer
 
 CHAT_URL="https://github.com/drsasa/Dreamcatcher-Packet-Tester/releases/download/${CHAT_VERSION}/chat"
