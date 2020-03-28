@@ -31,12 +31,17 @@ tracker](https://github.com/Othernet-Project/dreamcatcher-chat/issues).
 
 ## Burning the OS Image and Installation of the Chat App
 
-First download Armbian 5.67 from this location: https://archive.othernet.is/Dreamcatcher3%20Armbian/
-It is important to select Armbian 5.67, which is the second image on the list. Refer to the ReadMe on that page for any detailed information, otherwise just use Balena Etcher to write the image to a microSD card. You can find Balena Etcher here: https://www.balena.io/etcher/
+First download Armbian 5.67: 
+
+https://archive.othernet.is/Dreamcatcher3%20Armbian/
+
+Be sure to select Armbian 5.67, which is the second image on the list. Refer to the ReadMe on that page for detailed information, otherwise just use Balena Etcher to write the image to a microSD card. 
+
+You can find Balena Etcher here: https://www.balena.io/etcher/
 
 Once the image is ready, insert the microSD into your Dreamcatcher and turn the device on by plugging in the microUSB cable or holding the PWR button for 5 seconds. 
 
-To install the chat app, you will follow these steps:
+Install the chat app with the following steps. 
 
 ### 1. Log into the Dreamcatcher device using serial
 
