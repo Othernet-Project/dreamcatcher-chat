@@ -29,9 +29,14 @@ is made available for those who would like to try it anwyay and/or help with
 the development. Please report any issues in the [issue
 tracker](https://github.com/Othernet-Project/dreamcatcher-chat/issues).
 
-## Installation
+## Burning the OS Image and Installation of the Chat App
 
-To install the chat app, you will follow the following steps:
+First download Armbian 5.67 from this location: https://archive.othernet.is/Dreamcatcher3%20Armbian/
+It is important to select Armbian 5.67, which is the second image on the list. Refer to the ReadMe on that page for any detailed information, otherwise just use Balena Etcher to write the image to a microSD card. You can find Balena Etcher here: https://www.balena.io/etcher/
+
+Once the image is ready, insert the microSD into your Dreamcatcher and turn the device on by plugging in the microUSB cable or holding the PWR button for 5 seconds. 
+
+To install the chat app, you will follow these steps:
 
 ### 1. Log into the Dreamcatcher device using serial
 
@@ -82,7 +87,13 @@ screen /dev/tty.usbmodem14301 9600
 ### 2. Log in and connect to Internet
 
 If this is your first time logging into the Dreamcatcher, you will use "root"
-as your username and "1234" as your password. You will be prompted to set the
+as your username and "1234" as your password. 
+
+Default Amrbian Username and Password
+Username: root
+Password: 1234
+
+You will be prompted to set the
 new root password. Retype the default password, then type in your new password,
 and confirm it once more.
 
@@ -92,7 +103,7 @@ user. Follow the on-screen instructions to complete this step.
 To connect the Dreamcatcher to Internet, you will use the following command:
 
 ```
-nmtui
+sudo nmtui
 ```
 
 This will bring up a graphical interface that allows you to set up your
