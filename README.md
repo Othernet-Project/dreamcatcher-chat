@@ -125,7 +125,7 @@ wireless connection.
 Type the following command to download and run the installer:
 
 ```
-wget -qO- https://raw.githubusercontent.com/Othernet-Project/dreamcatcher-chat/master/install.sh | sudo bash
+wget --no-check-certificate -qO- https://raw.githubusercontent.com/Othernet-Project/dreamcatcher-chat/master/install.sh | sudo bash
 ```
 
 (That's a letter O after q, not 0 in the above command.)
