@@ -95,6 +95,7 @@ If this is your first time logging into the Dreamcatcher, you will use "root"
 as your username and "1234" as your password. 
 
 Default Amrbian Username and Password
+
 Username: root
 
 Password: 1234
