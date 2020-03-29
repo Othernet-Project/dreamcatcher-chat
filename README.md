@@ -96,6 +96,7 @@ as your username and "1234" as your password.
 
 Default Amrbian Username and Password
 Username: root
+
 Password: 1234
 
 You will be prompted to set the
