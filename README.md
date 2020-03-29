@@ -63,7 +63,7 @@ some number. Remember this number.
 
 Open PuTTY. Under "Connection Type" select "Serial", and input "COMx" (again,
 "x" is the number you saw in the Device Manager) in the "Serial line" box.
-Check that "Speed" says 9600.
+Check that "Speed" says 115200.
 
 Click "Open" to start the connection.
 
