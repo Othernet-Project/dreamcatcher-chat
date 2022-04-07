@@ -2,11 +2,11 @@
 
 set -e
 
-CHAT_VERSION=0.0.2
+CHAT_VERSION=0.0.3
 GUI_VERSION=0.0.7
 TMPD=/tmp/chat-installer
 
-CHAT_URL="https://github.com/drsasa/Dreamcatcher-Packet-Tester/releases/download/${CHAT_VERSION}/chat"
+CHAT_URL="https://github.com/Tysonpower/Dreamcatcher-Packet-Tester/releases/download/${CHAT_VERSION}/chat"
 GUI_URL="https://github.com/foxbunny/wschat/releases/download/${GUI_VERSION}/wschat-armv7"
 
 error () {
